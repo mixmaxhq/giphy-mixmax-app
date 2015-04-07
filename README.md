@@ -1,6 +1,6 @@
 # Giphy Mixmax app
 
-This is an open source Mixmax app. See post for details.
+This is an open source Mixmax app. See <https://mixmax.com/blog/how-we-built-giphy> for details.
 
 ## Running locally
 
