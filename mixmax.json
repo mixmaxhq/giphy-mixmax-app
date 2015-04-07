@@ -1,0 +1,11 @@
+{
+  "name": "Giphy",
+  "author": "Mixmax Inc",
+  "url": "https://mixmax.com",
+  "appTray": {
+    "name": "Giphy",
+    "icon": "public/img/logo_giphy.png",
+    "editor": "http://yourdomain.com/editor",
+    "resolver": "http://yourdomain.com/resolver"
+  }
+}
