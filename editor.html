@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <title>Mixmax &middot; Giphy</title>
 
+  <!-- Mixmax SDK -->
+  <script defer src="https://d1xa36cy0xt122.cloudfront.net/v1/Mixmax.js"></script>
+
   <link rel="stylesheet" href="/styles.css">
   <link href='//fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic,900,900italic,300italic,300' rel='stylesheet' type='text/css'>
   <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
@@ -107,19 +110,14 @@
       var width = target.attr('data-gif-animated-full-width');
 
       // Let Mixmax know it was done.
-      window.opener.postMessage({
-        method: 'done',
-        payload: {
-          src: gif,
-          width: width
-        }
-      }, 'https://app.mixmax.com');
-
-      window.close();
+      Mixmax.done({
+        src: gif,
+        width: width
+      });
     },
 
     _cancel: function() {
-      window.close();
+      Mixmax.cancel();
     },
 
     _search: function(e) {
