@@ -7,4 +7,5 @@ This is an open source Mixmax Link Resolver. See "Build an Interactive App" unde
 1. Install using `npm install`
 2. Run using `npm start`
 
+
 To test the editor locally, go to <http://localhost:8910/editor> in your browser.
