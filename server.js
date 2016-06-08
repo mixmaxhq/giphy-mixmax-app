@@ -7,7 +7,9 @@ var cors = require('cors');
 app.use(express.static(__dirname + '/public'));
 
 // So we can POST.
-app.use(bodyParser.urlencoded());
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 
 // Since Mixmax calls this API directly from the client-side, it must be whitelisted.
 var corsOptions = {
