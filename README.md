@@ -7,5 +7,8 @@ This is an open source Mixmax Enhancement. See <http://developer.mixmax.com/docs
 1. Install using `npm install`
 2. Run using `npm start`
 
+To test the editor locally, go to <https://localhost:8910/editor> in your browser.
 
-To test the editor locally, go to <http://localhost:8910/editor> in your browser.
+## Why do we run it in https locally?
+
+Mixmax slash command APIs are required to be served over https. This is because they are queried directly from the Mixmax client in the browser (using AJAX) that's running on an HTTPS domain. Browsers forbid AJAX requests from https domains to call http APIs, for security. So we must run an https server with a locally-signed certificate.
