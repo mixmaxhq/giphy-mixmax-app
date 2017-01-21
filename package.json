@@ -19,7 +19,8 @@
   "dependencies": {
     "body-parser": "^1.12.2",
     "cors": "^2.7.1",
-    "express": "^4.12.3"
+    "express": "^4.12.3",
+    "pem": "^1.9.4"
   },
   "devDependencies": {
     "nodemon": "^1.7.1"
