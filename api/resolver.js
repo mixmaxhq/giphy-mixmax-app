@@ -1,7 +1,7 @@
 module.exports = function(req, res) {
   var data = JSON.parse(req.body.params);
   if (!data) {
-    res.status(403 /* Unauthorized */ ).send('Invalid params');
+    res.status(400 /* Bad params */ ).send('Invalid params');
     return;
   }
 
